@@ -1,0 +1,28 @@
+using System;
+
+class URI
+{
+    static void Main(string[] args)
+    {
+        int soma = 0;
+        int contador = 0;
+
+        while (true) { 
+            int idade = int.Parse(Console.ReadLine());
+            if (idade < 0)
+            {
+                break;
+            }
+            soma += idade;
+            contador++;
+        }
+        if (contador > 0) { 
+            double media = (double)soma / contador;
+            Console.WriteLine(media.ToString("F2"));
+        }
+        else
+        {
+            Console.WriteLine("0.00");
+        }
+    }
+}
