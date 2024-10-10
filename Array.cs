@@ -27,6 +27,15 @@ namespace array
                 Console.Write($"|{vetor[i]}");
             }
         }
+         static int somaVetor(int[] vetor)
+ {
+     int soma = 0;
+     for (int i = 0; i < vetor.Length; i++)
+
+         soma += vetor[i];
+
+     return soma;
+ }
 
     }
 }
