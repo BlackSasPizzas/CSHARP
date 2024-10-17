@@ -35,7 +35,7 @@ namespace array
          soma += vetor[i];
 
      return soma;
- }
-
-    }
+    
+     }
+   }
 }
