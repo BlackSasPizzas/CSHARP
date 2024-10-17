@@ -36,7 +36,7 @@ namespace array
     
                  return soma;
         
-     }
+        }
         public static void InverterVetor(int[] vetor)
         {
              for (int i = 0; i < vetor.Length / 2; i++)
