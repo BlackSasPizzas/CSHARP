@@ -27,15 +27,25 @@ namespace array
                 Console.Write($"|{vetor[i]}");
             }
         }
-         static int somaVetor(int[] vetor)
- {
-     int soma = 0;
-     for (int i = 0; i < vetor.Length; i++)
-
-         soma += vetor[i];
-
-     return soma;
+        static int somaVetor(int[] vetor)
+            {
+                int soma = 0;
+                for (int i = 0; i < vetor.Length; i++)
     
+                soma += vetor[i];
+    
+                 return soma;
+        
      }
+        public static void InverterVetor(int[] vetor)
+        {
+             for (int i = 0; i < vetor.Length / 2; i++)
+             {
+         
+                 int temp = vetor[i];
+                 vetor[i] = vetor[vetor.Length - 1 - i];
+                 vetor[vetor.Length - 1 - i] = temp;
+             }
+      }
    }
 }
